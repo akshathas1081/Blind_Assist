@@ -5,41 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation = "vertical"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     android:weightSum="5"
     tools:context=".MainActivity">
 
 
-<RelativeLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1">
+        android:layout_height="6dp"
+        android:layout_weight="1">
 
-    <ImageView
-        android:id="@+id/homeImg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/round_visibility_black_48dp" />
+        <ImageView
+            android:id="@+id/homeImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/round_visibility_black_48dp" />
 
-</RelativeLayout>
+    </RelativeLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/background_card"
-        android:padding="15dp"
-        android:rowCount="2"
+        android:layout_weight="4"
+        android:background="@drawable/backg"
         android:columnCount="2"
-        android:layout_weight="4">
+        android:padding="15dp"
+        android:rowCount="2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_margin="10dp"
-            app:cardElevation="5dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="10dp"
+            app:cardElevation="5dp">
 
             <RelativeLayout
                 android:id="@+id/msgBox"
@@ -47,11 +47,11 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/round_email_black_48dp" />
+                    android:src="@drawable/msg" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -60,18 +60,19 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="50dp"
                     android:text="Message Inbox"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_margin="10dp"
-            app:cardElevation="5dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="10dp"
+            app:cardElevation="5dp">
 
             <RelativeLayout
                 android:id="@+id/phoneMngr"
@@ -79,11 +80,11 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/round_call_black_48dp_copy" />
+                    android:src="@drawable/call" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -92,18 +93,19 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="50dp"
                     android:text="Phone Manager"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_margin="10dp"
-            app:cardElevation="5dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="10dp"
+            app:cardElevation="5dp">
 
             <RelativeLayout
                 android:id="@+id/timeDate"
@@ -111,11 +113,11 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/round_today_black_48dp_copy" />
+                    android:src="@drawable/image__1_4" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -124,18 +126,19 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="50dp"
                     android:text="Battery Status"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_margin="10dp"
-            app:cardElevation="5dp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="10dp"
+            app:cardElevation="5dp">
 
             <RelativeLayout
                 android:id="@+id/cameraCard"
@@ -143,22 +146,23 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/round_add_a_photo_black_48dp_copy" />
+                    android:src="@drawable/image" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="50dp"
-                    android:text="Currency Recognition"
+                    android:layout_marginBottom="27dp"
                     android:gravity="center_horizontal"
+                    android:text="Currency Recognition"
+                    android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold|italic" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>

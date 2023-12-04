@@ -17,29 +17,31 @@
         android:id="@+id/batteryPer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:text="@string/battery_percentage"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/batteryCard" />
+        app:layout_constraintTop_toBottomOf="@+id/batteryCard"
+        android:textColor="@android:color/black"/>
 
     <TextView
         android:id="@+id/currDateTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/current_date_and_time"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/batteryCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/black"/>
 
     <ImageView
         android:id="@+id/batteryCard"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -47,7 +49,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/batteryStatus"
@@ -55,11 +58,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/battery_status"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/batteryPer" />
+        app:layout_constraintTop_toBottomOf="@+id/batteryPer"
+        android:textColor="@android:color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
